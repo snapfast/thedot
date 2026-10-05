@@ -437,8 +437,8 @@ export default function DotSpaceVisionBoard() {
 
   const positionClasses = {
     "right-center": "top-1/2 -translate-y-1/2 right-0",
-    "right-top": "top-24 right-0",
-    "right-bottom": "bottom-24 right-0",
+    "right-top": "top-28 right-0",
+    "right-bottom": "bottom-28 right-0",
   };
 
   const getThemeStyles = () => {
@@ -900,7 +900,7 @@ export default function DotSpaceVisionBoard() {
                   className="absolute transition-all duration-700 ease-out"
                   style={{
                     transform: isOpen
-                      ? `translate(${x}px, ${y - 24}px) scale(1)`
+                      ? `translate(${x - 24}px, ${y - 24}px) scale(1)`
                       : "translate(0px, -24px) scale(0)",
                     pointerEvents: isOpen ? "auto" : "none",
                     transitionDelay: isOpen ? `${idx * 40}ms` : "0ms",
